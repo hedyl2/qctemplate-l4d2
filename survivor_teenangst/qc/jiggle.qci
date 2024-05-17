@@ -1,0 +1,110 @@
+$jigglebone "ValveBiped.jiggle_holster"
+{
+	is_rigid
+	{
+		length 10
+		tip_mass 1000
+		pitch_constraint -3 3
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -74.999999 -15
+		yaw_friction 0
+		yaw_bounce 1
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_ponytail_01"
+{
+	is_rigid
+	{
+		length 5
+		tip_mass 2000
+		pitch_constraint 0 79.999998
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -50 50
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_ponytail_02"
+{
+	is_rigid
+	{
+		length 5
+		tip_mass 2000
+		pitch_constraint 0 30.000001
+		pitch_friction 5
+		pitch_bounce 0
+		yaw_constraint -50 50
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_lsideburn"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 100
+		pitch_stiffness 100
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 30.000001
+		pitch_friction 5
+		pitch_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_lbang_01"
+{
+	is_flexible
+	{
+		length 5
+		tip_mass 1000
+		pitch_stiffness 100
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 79.999998
+		pitch_friction 0
+		pitch_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_rbang"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 100
+		pitch_stiffness 100
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 30.000001
+		pitch_friction 5
+		pitch_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hair_rsideburn"
+{
+	is_flexible
+	{
+		length 10
+		tip_mass 100
+		pitch_stiffness 100
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 30.000001
+		pitch_friction 5
+		pitch_bounce 0
+	}
+}
