@@ -1,0 +1,125 @@
+
+$collisionjoints "mdl/physics.dmx"
+{
+	$mass 100
+	$inertia 2
+	$damping 0.05
+	$rotdamping 0.4
+	$rootbone "valvebiped.bip01_pelvis"
+
+
+	$jointconstrain "ValveBiped.Bip01_Spine1" x limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine1" y limit -16 16 0
+	$jointconstrain "ValveBiped.Bip01_Spine1" z limit -20 30 0
+
+	$jointconstrain "ValveBiped.Bip01_Spine2" x limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine2" y limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_Spine2" z limit -20 20 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Clavicle" 2
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" x limit -15 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" y limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_R_Clavicle" z limit 0 45 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Clavicle" 2
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" x limit -15 15 0
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" y limit -10 10 0
+	$jointconstrain "ValveBiped.Bip01_L_Clavicle" z limit 0 45 0
+
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" x limit -15 20 0
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" y limit -40 32 0
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" z limit -80 25 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Forearm" 2
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" x limit -40 15 0
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" z limit -120 10 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Hand" 2
+	$jointconstrain "ValveBiped.Bip01_L_Hand" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_L_Hand" y limit -35 35 0
+	$jointconstrain "ValveBiped.Bip01_L_Hand" z limit -50 50 0
+
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" x limit -15 20 0
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" y limit -40 32 0
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" z limit -80 25 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Forearm" 2
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" x limit -40 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" z limit -120 10 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Hand" 4
+	$jointconstrain "ValveBiped.Bip01_R_Hand" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_R_Hand" y limit -35 35 0
+	$jointconstrain "ValveBiped.Bip01_R_Hand" z limit -50 50 0
+
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" y limit -10 15 0
+	$jointconstrain "ValveBiped.Bip01_R_Thigh" z limit -55 25 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Calf" 2
+	$jointconstrain "ValveBiped.Bip01_R_Calf" x limit -10 25 0
+	$jointconstrain "ValveBiped.Bip01_R_Calf" y limit -5 5 0
+	$jointconstrain "ValveBiped.Bip01_R_Calf" z limit -10 115 0
+
+	$jointmassbias "ValveBiped.Bip01_R_Foot" 4
+	$jointconstrain "ValveBiped.Bip01_R_Foot" x limit -20 30 0
+	$jointconstrain "ValveBiped.Bip01_R_Foot" y limit -30 20 0
+	$jointconstrain "ValveBiped.Bip01_R_Foot" z limit -30 50 0
+
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" x limit -25 25 0
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" y limit -10 15 0
+	$jointconstrain "ValveBiped.Bip01_L_Thigh" z limit -55 25 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Calf" 2
+	$jointconstrain "ValveBiped.Bip01_L_Calf" x limit -10 25 0
+	$jointconstrain "ValveBiped.Bip01_L_Calf" y limit -5 5 0
+	$jointconstrain "ValveBiped.Bip01_L_Calf" z limit -10 115 0
+
+	$jointmassbias "ValveBiped.Bip01_L_Foot" 4
+	$jointconstrain "ValveBiped.Bip01_L_Foot" x limit -20 30 0
+	$jointconstrain "ValveBiped.Bip01_L_Foot" y limit -30 20 0
+	$jointconstrain "ValveBiped.Bip01_L_Foot" z limit -30 50 0
+
+	$jointmassbias "ValveBiped.Bip01_Head1" 2
+	$jointconstrain "ValveBiped.Bip01_Head1" x limit -50 50 0
+	$jointconstrain "ValveBiped.Bip01_Head1" y limit -20 20 0
+	$jointconstrain "ValveBiped.Bip01_Head1" z limit -26 30 0
+
+	$jointcollide "ValveBiped.Bip01_R_Foot" "ValveBiped.Bip01_L_Foot"
+	$jointcollide "ValveBiped.Bip01_R_Calf" "ValveBiped.Bip01_L_Foot"
+	$jointcollide "ValveBiped.Bip01_L_Calf" "ValveBiped.Bip01_R_Foot"
+	$jointcollide "ValveBiped.Bip01_L_Calf" "ValveBiped.Bip01_R_Calf"
+	$jointcollide "ValveBiped.Bip01_L_Thigh" "ValveBiped.Bip01_R_Thigh"
+	$jointcollide "ValveBiped.Bip01_Spine2" "ValveBiped.Bip01_R_Hand"
+	$jointcollide "ValveBiped.Bip01_Spine2" "ValveBiped.Bip01_L_Hand"
+	$jointcollide "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_R_Hand"
+	$jointcollide "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_L_Hand"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_Head1"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_Spine2"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_Spine1"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_Pelvis"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_R_Calf"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_L_Calf"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_R_Thigh"
+	$jointcollide "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_L_Thigh"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_Head1"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_Spine2"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_Spine1"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_Pelvis"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_R_Calf"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_L_Calf"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_R_Thigh"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_L_Thigh"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_R_Forearm"
+	$jointcollide "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_R_UpperArm"
+	$jointcollide "ValveBiped.Bip01_R_Hand" "ValveBiped.Bip01_R_Thigh"
+	$jointcollide "ValveBiped.Bip01_R_Hand" "ValveBiped.Bip01_L_Thigh"
+	$jointcollide "ValveBiped.Bip01_R_Hand" "ValveBiped.Bip01_Pelvis"
+	$jointcollide "ValveBiped.Bip01_L_Hand" "ValveBiped.Bip01_R_Thigh"
+	$jointcollide "ValveBiped.Bip01_L_Hand" "ValveBiped.Bip01_L_Thigh"
+	$jointcollide "ValveBiped.Bip01_L_Hand" "ValveBiped.Bip01_Pelvis"
+	$jointcollide "ValveBiped.Bip01_Head1" "ValveBiped.Bip01_R_Hand"
+	$jointcollide "ValveBiped.Bip01_Head1" "ValveBiped.Bip01_L_Hand"
+}

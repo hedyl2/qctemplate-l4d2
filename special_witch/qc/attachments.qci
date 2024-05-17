@@ -1,0 +1,28 @@
+$attachment "lfoot" "ValveBiped.Bip01_L_Foot" 0 0 0 rotate 0 0 0
+$attachment "rfoot" "ValveBiped.Bip01_R_Foot" 0 0 0 rotate 0 0 0
+$attachment "reye" "ValveBiped.Bip01_Head1" 3.09 -3.4 1.22 rotate 0 -89.37 0
+$attachment "leye" "ValveBiped.Bip01_Head1" 3.09 -3.4 -1.16 rotate 0 -89.37 0
+$attachment "forward" "ValveBiped.forward" 0 0 0 rotate 0 0 0
+$attachment "lfoot" "ValveBiped.Bip01_L_Foot" 0 2 0 rotate 0 -20 180
+$attachment "rfoot" "ValveBiped.Bip01_R_Foot" 0 2 0 rotate 0 -20 -180
+$attachment "lhand" "ValveBiped.Bip01_L_Hand" 9 -3 -2 rotate 15 0 15
+$attachment "rhand" "ValveBiped.Bip01_R_Hand" 9 -3 2 rotate -15 0 -15
+
+$keyvalues
+{
+	AddedAmbientScale 0.1 particles 
+	{
+		"effect"		 
+		{
+			"name" "witch_eye_glow"
+			"attachment_type" "follow_attachment"
+			"attachment_point" "reye"
+		}
+		"effect"		 
+		{
+			"name" "witch_eye_glow"
+			"attachment_type" "follow_attachment"
+			"attachment_point" "leye"
+		}
+	}
+}

@@ -1,0 +1,93 @@
+	flexcontroller nose range 0 1 "wrinkler"
+	flexcontroller nose range 0 1 "dilator"
+	flexcontroller mouth range 0 1 "right_corner_puller"
+	flexcontroller mouth range 0 1 "left_corner_puller"
+	flexcontroller mouth range 0 1 "right_corner_depressor"
+	flexcontroller mouth range 0 1 "left_corner_depressor"
+	flexcontroller mouth range 0 1 "chin_raiser"
+	flexcontroller phoneme range 0 1 "right_part"
+	flexcontroller phoneme range 0 1 "left_part"
+	flexcontroller phoneme range 0 1 "right_puckerer"
+	flexcontroller phoneme range 0 1 "left_puckerer"
+	flexcontroller phoneme range 0 1 "right_funneler"
+	flexcontroller phoneme range 0 1 "left_funneler"
+	flexcontroller phoneme range 0 1 "right_stretcher"
+	flexcontroller phoneme range 0 1 "left_stretcher"
+	flexcontroller phoneme range 0 1 "bite"
+	flexcontroller phoneme range 0 1 "presser"
+	flexcontroller phoneme range 0 1 "tightener"
+	flexcontroller phoneme range 0 1 "jaw_clencher"
+	flexcontroller phoneme range 0 1 "jaw_drop"
+	flexcontroller phoneme range 0 1 "right_mouth_drop"
+	flexcontroller phoneme range 0 1 "left_mouth_drop"
+	flexcontroller mouth range 0 1 "smile"
+	flexcontroller mouth range 0 1 "lower_lip"
+
+	localvar AU1AU2R
+	localvar AU1AU2L
+	localvar AU12R
+	localvar AU12L
+	localvar AU12AU25
+	localvar AU15R
+	localvar AU15L
+	localvar AU10R
+	localvar AU10L
+	localvar AU16
+	localvar AU6R
+	localvar AU6L
+	localvar AU25R
+	localvar AU25L
+	localvar AU18R
+	localvar AU18L
+	localvar AU22R
+	localvar AU22L
+	localvar AU20R
+	localvar AU20L
+	localvar AU26R
+	localvar AU26L
+	localvar AU27R
+	localvar AU27L
+	localvar right_open
+	localvar left_open
+	localvar right_lip_suppressor
+	localvar left_lip_suppressor
+	localvar right_depressor_suppressor
+	localvar left_depressor_suppressor
+	localvar right_corner_suppressor
+	localvar left_corner_suppressor
+	localvar right_drop_suppressor
+	localvar left_drop_suppressor
+	localvar right_drop
+	localvar left_drop
+	%AU9R = wrinkler
+	%AU9L = wrinkler
+	%AU38 = dilator
+	%right_lip_suppressor = 1 / %right_open * (1 - presser) * (1 - bite)
+	%left_lip_suppressor = 1 / %left_open * (1 - presser) * (1 - bite)
+	%AU25R = right_part * right_part * %right_lip_suppressor * (1 - smile)
+	%AU25L = left_part * left_part * %left_lip_suppressor * (1 - smile)
+	%AU12AU25 = smile * smile * 0.5 * (%right_lip_suppressor + %left_lip_suppressor)
+	%AU18R = right_puckerer * right_puckerer * %right_lip_suppressor
+	%AU18L = left_puckerer * left_puckerer * %left_lip_suppressor
+	%right_depressor_suppressor = 1 / (%AU18R * 0.8 + %AU22R * 0.8 + %AU17R + bite + right_corner_puller + right_stretcher + right_corner_depressor) * (1 - jaw_drop * 0.5) * (1 - smile * 0.5)
+	%left_depressor_suppressor = 1 / (%AU18L * 0.8 + %AU22L * 0.8 + %AU17L + bite + left_corner_puller + left_stretcher + left_corner_depressor) * (1 - jaw_drop * 0.5) * (1 - smile * 0.5)
+	%AU15R = right_corner_depressor * right_corner_depressor * %right_depressor_suppressor
+	%AU15L = left_corner_depressor * left_corner_depressor * %left_depressor_suppressor
+	%right_corner_suppressor = 1 / (%AU18R * 0.8 + %AU22R * 0.8 + %AU17R + bite + right_corner_puller + right_stretcher + right_corner_depressor) * (1 - jaw_drop * 0.5) * (1 - smile)
+	%left_corner_suppressor = 1 / (%AU18L * 0.8 + %AU22L * 0.8 + %AU17L + bite + left_corner_puller + left_stretcher + left_corner_depressor) * (1 - jaw_drop * 0.5) * (1 - smile)
+	%AU12R = right_corner_puller * right_corner_puller * %right_corner_suppressor
+	%AU12L = left_corner_puller * left_corner_puller * %left_corner_suppressor
+	%AU20R = right_stretcher * right_stretcher * %right_corner_suppressor
+	%AU20L = left_stretcher * left_stretcher * %left_corner_suppressor
+	%AU32 = bite
+	%AU24 = presser + (1 - presser) * tightener
+	%AU31 = jaw_clencher * jaw_clencher / (jaw_clencher + jaw_drop)
+	%right_drop_suppressor = 1 / (0.5 * %right_open + right_mouth_drop) * (1 - presser) * (1 - bite)
+	%left_drop_suppressor = 1 / (0.5 * %left_open + left_mouth_drop) * (1 - presser) * (1 - bite)
+	%right_drop = right_mouth_drop * right_mouth_drop * %right_drop_suppressor
+	%left_drop = left_mouth_drop * left_mouth_drop * %left_drop_suppressor
+	%AU26R = jaw_drop * (1 - %right_drop) * jaw_drop / (jaw_clencher + jaw_drop)
+	%AU26L = jaw_drop * (1 - %left_drop) * jaw_drop / (jaw_clencher + jaw_drop)
+	%AU27R = jaw_drop * %right_drop * jaw_drop / (jaw_clencher + jaw_drop)
+	%AU27L = jaw_drop * %left_drop * jaw_drop / (jaw_clencher + jaw_drop)
+	%AU16 = lower_lip * lower_lip * 0.25 * (%right_lip_suppressor + %left_lip_suppressor) * (1 - 0.5 * (%AU27R + %AU27L))
