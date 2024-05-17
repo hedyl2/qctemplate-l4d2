@@ -6,7 +6,7 @@ Some Tips
 
 20,000 | If your model exceeds this vertex count, you will need to split it up into multiple parts
 
-55,000 | If your model exceeds this vertex count, decals applied to the model may crash your game and the $nodecal "1" parameter will be required.
+55,000 | If your model exceeds this vertex count, decals applied to the model may crash your game and the $nodecal "1" parameter will be required. LOD meshes also contribute to this vertex count, so they should be removed.
 
 75,000 | If your model exceeds this vertex count, your model may compile with errors, or perhaps fail to compile at all
 
