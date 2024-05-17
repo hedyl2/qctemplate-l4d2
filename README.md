@@ -1,0 +1,1 @@
+A set of qc files to aid in the creation of Left 4 Dead 2 character replacers. Designed to be easy to read and have and drop-in functionality. Compiled result is not 100% authentic to what's seen in Left 4 Dead 2, but it is very close. Biggest differences are in LOD meshes and eyelid parameters.
