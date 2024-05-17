@@ -1,6 +1,9 @@
 mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0
 noautodmxrules
 
+flexcontroller eyes range -30 30 eyes_updown
+flexcontroller eyes range -30 30 eyes_rightleft
+
 // add the editable flex controllers
 flexcontroller eyelid right_lid_raiser left_lid_raiser 
 flexcontroller eyelid right_lid_tightener left_lid_tightener
