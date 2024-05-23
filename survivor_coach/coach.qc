@@ -1,22 +1,22 @@
 //-----------------------------------------------------------------------------------------------
-//                            			 LIGHT MODEL
+//                            			 MODEL
 //-----------------------------------------------------------------------------------------------
 
-$modelname "survivors/survivor_TeenAngst_light.mdl"
+$modelname "survivors/survivor_coach.mdl"
 
-//$scale 1
+$scale 1.05
 
-$model "TeenAngst" "mdl/zoey_reference_wrinkle.dmx" {
-	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.110000 -3.499979 62.600012 "teenangst_eyeball_r" 1 5 "iris_unused" 0.6
-	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.110000 -3.499979 62.600012 "teenangst_eyeball_l" 1 -5 "iris_unused" 0.6
+$model "Coach" "mdl/coach_model_merged.dmx" {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.209033 -2.6573925 70.720566 "coach_eyeball_r" 1.05  4 "brown_pupil" 0.55
+	eyeball lefteye  "ValveBiped.Bip01_Head1"  1.209033 -2.6573925 70.720566 "coach_eyeball_l" 1.05 -4 "brown_pupil" 0.55
 
-	dmxeyelid upper mdl/zoey_reference_wrinkle.dmx lowerer F01 -0.22 neutral F00  0.05 raiser F02  0.29 righteyeball eye_right lefteyeball eye_left
-	dmxeyelid lower mdl/zoey_reference_wrinkle.dmx lowerer F03 -0.43 neutral F00 -0.27 raiser F04 -0.16 righteyeball eye_right lefteyeball eye_left
+	dmxeyelid upper "mdl/coach_model_merged.dmx" lowerer F01 -0.17 neutral F00  0.11 raiser F02  0.26 righteyeball righteye lefteyeball lefteye
+	dmxeyelid lower "mdl/coach_model_merged.dmx" lowerer F03 -0.21 neutral F00 -0.16 raiser F04 -0.10 righteyeball righteye lefteyeball lefteye
 
 	$include qc/face.qci
 }
 
-$eyeposition 0 0 60
+$eyeposition 0 0 70
 $maxeyedeflection 30
 $forcephonemecrossfade
 
@@ -29,13 +29,13 @@ $mostlyopaque
 //                            			MATERIALS
 //-----------------------------------------------------------------------------------------------
 
-$cdmaterials "models\survivors\TeenAngst\"
-
+$cdmaterials "models\survivors\producer\"
+$cdmaterials "models\survivors\coach\"
 
 $texturegroup "skinfamilies"
 {
-	{ "zoey_head"    "zoey_color"    }
-	{ "zoey_head_it" "zoey_color_it" }
+	{ "coach_head"    "coach_body"   	"producer_body" 	}
+	{ "coach_head_it" "coach_body_it"	"producer_body_it"	}
 }
 
 //-----------------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ $ikchain "ikclip" "ValveBiped.weapon_bone_Clip" knee 0.707 -0.707 0
 $ikautoplaylock "rfoot" 1 0.1
 $ikautoplaylock "lfoot" 1 0.1
 
-$include "qc/anims_zoey_light.qci"
+$include "qc/anim_coach.qci"
 
 //$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
 
@@ -69,7 +69,7 @@ $proceduralbones "qc/procedurals.vrd"
 $include "qc/hbox.qci"
 $include "qc/collision.qci"
 $include "qc/attachments.qci"
-$include "qc/jiggle.qci"
+//$include "qc/jiggle.qci"
 $include "qc/lod.qci"
 $include "qc/bone.qci"
 

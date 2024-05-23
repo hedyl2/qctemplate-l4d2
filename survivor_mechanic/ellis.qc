@@ -58,14 +58,18 @@ $ikautoplaylock "lfoot" 1 0.1
 
 $include "qc/anim_ellis.qci"
 
+//$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
+
 //-----------------------------------------------------------------------------------------------
 //                            			QC INCLUDES
 //-----------------------------------------------------------------------------------------------
 
 $proceduralbones "qc/procedurals.vrd"
 
-$include "qc/bone.qci"
 $include "qc/hbox.qci"
-$include "qc/attachments.qci"
 $include "qc/collision.qci"
+$include "qc/attachments.qci"
+//$include "qc/jiggle.qci"
 $include "qc/lod.qci"
+$include "qc/bone.qci"
+

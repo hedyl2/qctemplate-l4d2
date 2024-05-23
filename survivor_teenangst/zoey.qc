@@ -4,6 +4,8 @@
 
 $modelname "survivors/survivor_TeenAngst.mdl"
 
+//$scale 1
+
 $model "TeenAngst" "mdl/zoey_reference_wrinkle.dmx" {
 	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.110000 -3.499979 62.600012 "teenangst_eyeball_r" 1 5 "iris_unused" 0.6
 	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.110000 -3.499979 62.600012 "teenangst_eyeball_l" 1 -5 "iris_unused" 0.6
@@ -18,16 +20,17 @@ $eyeposition 0 0 60
 $maxeyedeflection 30
 $forcephonemecrossfade
 
+$surfaceprop "flesh"
+$contents "solid"
+$ambientboost
+$mostlyopaque
+
 //-----------------------------------------------------------------------------------------------
 //                            			MATERIALS
 //-----------------------------------------------------------------------------------------------
 
-$surfaceprop "flesh"
-$ambientboost
-$mostlyopaque
-$contents "solid"
-
 $cdmaterials "models\survivors\TeenAngst\"
+
 
 $texturegroup "skinfamilies"
 {
@@ -55,9 +58,13 @@ $ikautoplaylock "lfoot" 1 0.1
 
 $include "qc/anims_zoey.qci"
 
+//$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
+
 //-----------------------------------------------------------------------------------------------
 //                            			QC INCLUDES
 //-----------------------------------------------------------------------------------------------
+
+$proceduralbones "qc/procedurals.vrd"
 
 $include "qc/hbox.qci"
 $include "qc/collision.qci"
@@ -66,4 +73,3 @@ $include "qc/jiggle.qci"
 $include "qc/lod.qci"
 $include "qc/bone.qci"
 
-$proceduralbones "qc/procedurals.vrd"
