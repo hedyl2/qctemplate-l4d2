@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------------------------
-//                            			 LIGHT MODEL
+//                            		ZOEY LIGHT MODEL
 //-----------------------------------------------------------------------------------------------
 
 $modelname "survivors/survivor_TeenAngst_light.mdl"
@@ -20,7 +20,6 @@ $eyeposition 0 0 60
 $maxeyedeflection 30
 $forcephonemecrossfade
 
-$surfaceprop "flesh"
 $contents "solid"
 $ambientboost
 $mostlyopaque
@@ -30,13 +29,6 @@ $mostlyopaque
 //-----------------------------------------------------------------------------------------------
 
 $cdmaterials "models\survivors\TeenAngst\"
-
-
-$texturegroup "skinfamilies"
-{
-	{ "zoey_head"    "zoey_color"    }
-	{ "zoey_head_it" "zoey_color_it" }
-}
 
 //-----------------------------------------------------------------------------------------------
 //                            			ANIMATIONS
@@ -58,6 +50,9 @@ $ikautoplaylock "lfoot" 1 0.1
 
 $include "qc/anims_zoey_light.qci"
 
+//Only necessary when custom survivor's proportions are wildly different from vanilla skeleton. You might want to use $unlockdefinebones in tandem.
+//Frame 0 must be your custom survivor's proportions, Frame 1 must be the vanilla survivor's proportions. LOCATION KEYFRAMES ONLY! NO SCALE, NO ROTATION.
+
 //$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
 
 //-----------------------------------------------------------------------------------------------
@@ -67,9 +62,7 @@ $include "qc/anims_zoey_light.qci"
 $proceduralbones "qc/procedurals.vrd"
 
 $include "qc/hbox.qci"
-$include "qc/collision.qci"
 $include "qc/attachments.qci"
 $include "qc/jiggle.qci"
 $include "qc/lod.qci"
 $include "qc/bone.qci"
-

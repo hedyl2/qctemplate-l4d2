@@ -10,7 +10,7 @@ $model "witch_model" "mdl/witch_reference.dmx" {
 }
 
 $eyeposition 0 0 73
-
+$surfaceprop "flesh"
 $contents "solid"
 $ambientboost
 $opaque
@@ -19,7 +19,7 @@ $opaque
 //                            			MATERIALS
 //-----------------------------------------------------------------------------------------------
 
-$surfaceprop "flesh"
+
 
 $cdmaterials "models\infected\witch\"
 

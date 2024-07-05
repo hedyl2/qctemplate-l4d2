@@ -1,3 +1,4 @@
+//$modelname weapons\arms\v_arms_producer_new.mdl
 $modelname weapons\arms\v_arms_zoey.mdl
 
 $cdmaterials models\survivors\TeenAngst\

@@ -1,0 +1,10 @@
+$modelname weapons/arms/v_arms_bill.mdl
+//$modelname weapons/arms/v_arms_gambler_new.mdl
+
+$cdmaterials "Models/survivors/namvet"
+
+$include qc/bone_fps.qci
+
+$body arms "mdl/v_arms_bill.dmx"
+
+$sequence idle "mdl/v_arms_bill.dmx"

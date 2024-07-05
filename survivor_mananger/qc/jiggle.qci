@@ -1,0 +1,162 @@
+$jigglebone "ValveBiped.jiggy_gunholster"
+{
+	is_flexible
+	{
+		length 100
+		tip_mass 0
+		pitch_stiffness 200
+		pitch_damping 10
+		yaw_stiffness 200
+		yaw_damping 10
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 19.999999
+	}
+}
+$jigglebone "ValveBiped.jiggy_holsterbag"
+{
+	is_flexible
+	{
+		length 100
+		tip_mass 0
+		pitch_stiffness 200
+		pitch_damping 10
+		yaw_stiffness 200
+		yaw_damping 10
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 19.999999
+	}
+}
+$jigglebone "ValveBiped.jiggy_sidebag"
+{
+	is_flexible
+	{
+		length 15
+		tip_mass 0
+		pitch_stiffness 200
+		pitch_damping 10
+		yaw_stiffness 300
+		yaw_damping 10
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 79.999998
+	}
+}
+
+$jigglebone "ValveBiped.Jiggle_tie1"
+{
+	is_rigid
+	{
+		length 15
+		tip_mass 1000
+		pitch_constraint 5 15
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -15 15
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.Jiggle_tie2"
+{
+	is_rigid
+	{
+		length 15
+		tip_mass 1000
+		pitch_constraint 0 19.999999
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -10 10
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.Jiggle_tie3"
+{
+	is_rigid
+	{
+		length 15
+		tip_mass 1000
+		pitch_constraint 0 25
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -5 5
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.Jiggle_tie4"
+{
+	is_rigid
+	{
+		length 15
+		tip_mass 1000
+		pitch_constraint 0 30.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -5 5
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+// These jigglebones have no geometry and might as well not exist. A weird remnant of TRS era, maybe.
+// delete if you want, preserved here for accuracy
+
+$jigglebone "ValveBiped.jiggy_keyring"
+{
+	is_flexible
+	{
+		length 15
+		tip_mass 0
+		pitch_stiffness 200
+		pitch_damping 10
+		yaw_stiffness 300
+		yaw_damping 10
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 79.999998
+	}
+}
+$jigglebone "ValveBiped.jiggy_keysfront"
+{
+	is_flexible
+	{
+		length 2
+		tip_mass 0
+		pitch_stiffness 300
+		pitch_damping 5
+		yaw_stiffness 300
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_keysrear"
+{
+	is_flexible
+	{
+		length 2
+		tip_mass 0
+		pitch_stiffness 300
+		pitch_damping 5
+		yaw_stiffness 300
+		yaw_damping 5
+		along_stiffness 100
+		along_damping 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_hood"
+{
+	is_rigid
+	{
+		length 7
+		tip_mass 1000
+		pitch_constraint 0 90.000003
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -30.000001 30.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}

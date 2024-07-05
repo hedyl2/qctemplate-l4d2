@@ -1,6 +1,7 @@
-$modelname weapons\arms\v_arms_gambler_new.mdl
+//$modelname weapons/arms/v_arms_bill.mdl
+$modelname weapons/arms/v_arms_gambler_new.mdl
 
-$cdmaterials "models\survivors\Gambler\"
+$cdmaterials "models/survivors/gambler/"
 
 $include qc/bone_fps.qci
 

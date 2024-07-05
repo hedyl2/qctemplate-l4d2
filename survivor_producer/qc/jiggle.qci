@@ -1,0 +1,240 @@
+$jigglebone "ValveBiped.braid03_01"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 2
+		yaw_stiffness 25
+		yaw_damping 2
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 65.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -65.000001 65.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid03_02"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 50
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 45.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid03_03"
+{
+	is_flexible
+	{
+		length 5
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 6
+		yaw_stiffness 50
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -25 45.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid01_01"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 2
+		yaw_stiffness 25
+		yaw_damping 2
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 65.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -65.000001 65.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid01_02"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 50
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint 0 39.999999
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid01_03"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 50
+		pitch_damping 6
+		yaw_stiffness 100
+		yaw_damping 10
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -10 25
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid01_04"
+{
+	is_flexible
+	{
+		length 3
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 6
+		yaw_stiffness 25
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -15 15
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid02_01"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 2
+		yaw_stiffness 25
+		yaw_damping 2
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -2 65.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -65.000001 65.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid02_02"
+{
+	is_flexible
+	{
+		length 7
+		tip_mass 100
+		pitch_stiffness 50
+		pitch_damping 5
+		yaw_stiffness 100
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -3 45.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.braid02_03"
+{
+	is_flexible
+	{
+		length 3
+		tip_mass 100
+		pitch_stiffness 25
+		pitch_damping 6
+		yaw_stiffness 50
+		yaw_damping 8
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -10 45.000001
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -45.000001 45.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.pony01"
+{
+	is_flexible
+	{
+		length 12
+		tip_mass 600
+		pitch_stiffness 250
+		pitch_damping 12
+		yaw_stiffness 250
+		yaw_damping 12
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -5 35
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -25 25
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.pony02"
+{
+	is_flexible
+	{
+		length 14
+		tip_mass 600
+		pitch_stiffness 100
+		pitch_damping 6
+		yaw_stiffness 100
+		yaw_damping 6
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -5 50
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -25 25
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}

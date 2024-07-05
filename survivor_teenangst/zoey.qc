@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------------------------
-//                            			 MODEL
+//                            		VANILLA ZOEY MODEL
 //-----------------------------------------------------------------------------------------------
 
 $modelname "survivors/survivor_TeenAngst.mdl"
@@ -30,7 +30,7 @@ $mostlyopaque
 //-----------------------------------------------------------------------------------------------
 
 $cdmaterials "models\survivors\TeenAngst\"
-
+$cdmaterials "models\survivors\"
 
 $texturegroup "skinfamilies"
 {
@@ -58,6 +58,9 @@ $ikautoplaylock "lfoot" 1 0.1
 
 $include "qc/anims_zoey.qci"
 
+//Only necessary when custom survivor's proportions are wildly different from vanilla skeleton. You might want to use $unlockdefinebones in tandem.
+//Frame 0 must be your custom survivor's proportions, Frame 1 must be the vanilla survivor's proportions. LOCATION KEYFRAMES ONLY! NO SCALE, NO ROTATION.
+
 //$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
 
 //-----------------------------------------------------------------------------------------------
@@ -72,4 +75,3 @@ $include "qc/attachments.qci"
 $include "qc/jiggle.qci"
 $include "qc/lod.qci"
 $include "qc/bone.qci"
-
