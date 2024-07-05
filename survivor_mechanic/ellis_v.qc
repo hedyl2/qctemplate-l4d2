@@ -1,3 +1,4 @@
+//$modelname weapons\arms\v_arms_francis.mdl
 $modelname weapons\arms\v_arms_mechanic_new.mdl
 
 $cdmaterials "models\survivors\mechanic\"
