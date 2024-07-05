@@ -13,16 +13,6 @@ $collisionjoints "mdl/physics.dmx"
 	$jointconstrain "ValveBiped.Bip01_Spine1" y limit -16 16 0
 	$jointconstrain "ValveBiped.Bip01_Spine1" z limit -20 30 0
 
-	$jointmassbias "Dick" 8
-	$jointconstrain "Dick" x limit -10 10 0
-	$jointconstrain "Dick" y limit -16 16 0
-	$jointconstrain "Dick" z limit -20 30 0
-
-	$jointmassbias "Balls" 8
-	$jointconstrain "Balls" x limit -10 10 0
-	$jointconstrain "Balls" y limit -16 16 0
-	$jointconstrain "Balls" z limit -20 30 0
-
 	$jointmassbias "ValveBiped.Bip01_Spine2" 9
 	$jointconstrain "ValveBiped.Bip01_Spine2" x limit -10 10 0
 	$jointconstrain "ValveBiped.Bip01_Spine2" y limit -10 10 0
