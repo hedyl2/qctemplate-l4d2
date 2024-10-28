@@ -1,0 +1,41 @@
+
+$jigglebone "ValveBiped.jiggy_jacket_left"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 1000
+		pitch_stiffness 100
+		pitch_damping 7
+		yaw_stiffness 100
+		yaw_damping 7
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -5 79.999998
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -30.000001 30.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}
+$jigglebone "ValveBiped.jiggy_jacket_right"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 1000
+		pitch_stiffness 100
+		pitch_damping 7
+		yaw_stiffness 100
+		yaw_damping 7
+		along_stiffness 100
+		along_damping 0
+		pitch_constraint -5 79.999998
+		pitch_friction 0
+		pitch_bounce 0
+		yaw_constraint -30.000001 30.000001
+		yaw_friction 0
+		yaw_bounce 0
+	}
+}

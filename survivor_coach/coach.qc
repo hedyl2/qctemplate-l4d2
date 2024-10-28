@@ -70,7 +70,6 @@ $include "qc/anims_coach.qci"
 $proceduralbones "qc/procedurals.vrd"
 
 $include "qc/hbox.qci"
-$include "qc/collision.qci"
 $include "qc/attachments.qci"
 //$include "qc/jiggle.qci"
 $include "qc/lod.qci"

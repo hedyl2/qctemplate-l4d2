@@ -8,4 +8,3 @@ $include qc/bone_fps.qci
 $body arms "mdl/v_arms_louis.dmx"
 
 $sequence idle "mdl/v_arms_louis.dmx"
-
