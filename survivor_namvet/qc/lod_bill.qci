@@ -1,0 +1,78 @@
+$lod 10
+{
+	bonetreecollapse "ValveBiped.Bip01_L_Finger01"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger11"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger21"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger31"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger41"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger01"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger11"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger21"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger31"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger41"
+}
+
+$lod 15
+
+{
+	//replacemodel "NamVet_reference_wrinkle.dmx" "lod/namvet_lod_1.dmx"
+	replacebone "ValveBiped.Bip01_Neck1" "ValveBiped.Bip01_Head1"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger2"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger1"
+	bonetreecollapse "ValveBiped.Bip01_L_Finger0"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger2"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger1"
+	bonetreecollapse "ValveBiped.Bip01_R_Finger0"
+}
+
+$lod 25
+{
+	//replacemodel "dmx/NamVet_reference_wrinkle.dmx" "dmx/namvet_lod_2.dmx"
+	bonetreecollapse "ValveBiped.Bip01_Head1"
+	replacebone "ValveBiped.Bip01_Neck1" "ValveBiped.Bip01_Head1"
+	bonetreecollapse "ValveBiped.Bip01_L_Hand"
+	bonetreecollapse "ValveBiped.Bip01_R_Hand"
+	bonetreecollapse "ValveBiped.Bip01_L_Foot"
+	bonetreecollapse "ValveBiped.Bip01_R_Foot"
+	replacebone "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_Spine2"
+	nofacial
+}
+
+$lod 40
+{
+	//replacemodel "dmx/NamVet_reference_wrinkle.dmx" "dmx/namvet_lod_3.dmx"
+	removemesh "models/survivors/NamVet/eyeball_l"
+	removemesh "models/survivors/NamVet/eyeball_r"
+	bonetreecollapse "ValveBiped.Bip01_Head1"
+	replacebone "ValveBiped.Bip01_Neck1" "ValveBiped.Bip01_Spine4"
+	bonetreecollapse "ValveBiped.Bip01_L_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_R_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_L_Calf"
+	bonetreecollapse "ValveBiped.Bip01_R_Calf"
+	replacebone "ValveBiped.Bip01_L_Clavicle" "ValveBiped.Bip01_Spine4"
+	replacebone "ValveBiped.Bip01_R_Clavicle" "ValveBiped.Bip01_Spine4"
+	replacebone "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_Spine2"
+	replacebone "ValveBiped.Bip01_Spine" "ValveBiped.Bip01_Pelvis"
+	bonetreecollapse "ValveBiped.weapon_bone"
+	nofacial
+}
+
+$shadowlod
+{
+	//replacemodel "dmx/NamVet_reference_wrinkle.dmx" "dmx/namvet_lod_3.dmx"
+	removemesh "models/survivors/NamVet/eyeball_l"
+	removemesh "models/survivors/NamVet/eyeball_r"
+	removemesh "models/survivors/NamVet/bill_hair"
+	bonetreecollapse "ValveBiped.Bip01_Head1"
+	replacebone "ValveBiped.Bip01_Neck1" "ValveBiped.Bip01_Spine4"
+	bonetreecollapse "ValveBiped.Bip01_L_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_R_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_L_Calf"
+	bonetreecollapse "ValveBiped.Bip01_R_Calf"
+	replacebone "ValveBiped.Bip01_L_Clavicle" "ValveBiped.Bip01_Spine4"
+	replacebone "ValveBiped.Bip01_R_Clavicle" "ValveBiped.Bip01_Spine4"
+	replacebone "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_Spine2"
+	replacebone "ValveBiped.Bip01_Spine" "ValveBiped.Bip01_Pelvis"
+	bonetreecollapse "ValveBiped.weapon_bone"
+	nofacial
+}

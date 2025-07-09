@@ -1,18 +1,18 @@
 $animblocksize 32 nostall
 $bonesaveframe "ValveBiped.Bip01_Pelvis" position
 
-$animation "@dlc1_intro_zoey_shrug_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_shrug_corrective_animation.smd"
-$animation "@dlc1_intro_zoey_shout_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_shout_corrective_animation.smd"
-$animation "@dlc1_intro_zoey_headshake_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_headshake_corrective_animation.smd"
-$animation "@dlc1_intro_zoey_handflipR_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_handflipR_corrective_animation.smd"
-$animation "@dlc1_intro_zoey_head_gesture_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_head_gesture_corrective_animation.smd"
-$animation "@dlc1_intro_zoey_generator_point_corrective_animation" "mdl/anims/lightz/@dlc1_intro_zoey_generator_point_corrective_animation.smd"
+$animation "@dlc1_intro_zoey_shrug_corrective_animation" "anims/lightz/@dlc1_intro_zoey_shrug_corrective_animation"
+$animation "@dlc1_intro_zoey_shout_corrective_animation" "anims/lightz/@dlc1_intro_zoey_shout_corrective_animation"
+$animation "@dlc1_intro_zoey_headshake_corrective_animation" "anims/lightz/@dlc1_intro_zoey_headshake_corrective_animation"
+$animation "@dlc1_intro_zoey_handflipR_corrective_animation" "anims/lightz/@dlc1_intro_zoey_handflipR_corrective_animation"
+$animation "@dlc1_intro_zoey_head_gesture_corrective_animation" "anims/lightz/@dlc1_intro_zoey_head_gesture_corrective_animation"
+$animation "@dlc1_intro_zoey_generator_point_corrective_animation" "anims/lightz/@dlc1_intro_zoey_generator_point_corrective_animation"
 
-$sequence "Light" "mdl/physics.dmx" fps 30.00
-$sequence ragdoll "mdl/physics.dmx" ACT_DIERAGDOLL 1 fps 30.00
+$sequence Light "physics.dmx" fps 30.00
+$sequence ragdoll "physics.dmx" ACT_DIERAGDOLL 1 fps 30.00
 
 $sequence "dlc1_intro_zoey_idle" {
-	"mdl/anims/lightz/dlc1_intro_zoey_idle.smd"
+	"anims/lightz/dlc1_intro_zoey_idle.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -24,7 +24,7 @@ $sequence "dlc1_intro_zoey_idle" {
 }
 
 $sequence "dlc1_intro_zoey_shrug" {
-	"mdl/anims/lightz/dlc1_intro_zoey_shrug.smd"
+	"anims/lightz/dlc1_intro_zoey_shrug.smd"
 	activity "ACT_DLCINTRO_ZOEY_01" -1
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
@@ -35,7 +35,7 @@ $sequence "dlc1_intro_zoey_shrug" {
 }
 
 $sequence "dlc1_intro_zoey_shout" {
-	"mdl/anims/lightz/dlc1_intro_zoey_shout.smd"
+	"anims/lightz/dlc1_intro_zoey_shout.smd"
 	activity "ACT_DLCINTRO_ZOEY_02" -1
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
@@ -46,7 +46,7 @@ $sequence "dlc1_intro_zoey_shout" {
 }
 
 $sequence "dlc1_intro_zoey_headshake" {
-	"mdl/anims/lightz/dlc1_intro_zoey_headshake.smd"
+	"anims/lightz/dlc1_intro_zoey_headshake.smd"
 	activity "ACT_DLCINTRO_ZOEY_03" -1
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
@@ -57,7 +57,7 @@ $sequence "dlc1_intro_zoey_headshake" {
 }
 
 $sequence "dlc1_intro_zoey_handflipR" {
-	"mdl/anims/lightz/dlc1_intro_zoey_handflipR.smd"
+	"anims/lightz/dlc1_intro_zoey_handflipR.smd"
 	activity "ACT_DLCINTRO_ZOEY_04" -1
 	delta
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
@@ -68,10 +68,10 @@ $sequence "dlc1_intro_zoey_handflipR" {
 }
 
 $sequence "dlc1_intro_zoey_head_gesture" {
-	"mdl/anims/lightz/dlc1_intro_zoey_head_gesture.smd"
+	"anims/lightz/dlc1_intro_zoey_head_gesture.smd"
 	activity "ACT_DLCINTRO_ZOEY_05" -1
 	delta
-	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+
 	subtract "@dlc1_intro_zoey_head_gesture_corrective_animation" 0
 	fadein 0.2
 	fadeout 0.2
@@ -79,10 +79,10 @@ $sequence "dlc1_intro_zoey_head_gesture" {
 }
 
 $sequence "dlc1_intro_zoey_generator_point" {
-	"mdl/anims/lightz/dlc1_intro_zoey_generator_point.smd"
+	"anims/lightz/dlc1_intro_zoey_generator_point.smd"
 	activity "ACT_DLCINTRO_ZOEY_06" -1
 	delta
-	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+
 	subtract "@dlc1_intro_zoey_generator_point_corrective_animation" 0
 	fadein 0.2
 	fadeout 0.2

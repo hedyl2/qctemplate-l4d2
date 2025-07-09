@@ -4,16 +4,15 @@
 
 $modelname "survivors/NamVet/namvet_deathpose.mdl"
 
+$body		"body"		"mdl/namvet_deathpose"
+$sequence	"ref"		"mdl/namvet_deathpose"
+
 $staticprop
-
-$body "body" "mdl/namvet_deathpose.smd"
-
 $contents "solid"
+$bbox -0.239 -14.764 -0.99 49.728 15.31 28.464
 
 $cdmaterials "Models\survivors\namvet"
 
-$bbox -0.239 -14.764 -0.99 49.728 15.31 28.464
 
-$definebone "static_prop" "" 0 0 0 0 0 0 0 0 0 0 0 0
 
-$sequence "ref" mdl/namvet_deathpose.smd
+//$definebone "static_prop" "" 0 0 0 0 0 0 0 0 0 0 0 0

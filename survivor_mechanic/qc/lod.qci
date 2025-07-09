@@ -1,5 +1,3 @@
-$pushd mdl
-
 $lod 10
 {
 	replacebone "ValveBiped.Bip01_R_Finger42" "ValveBiped.Bip01_R_Finger41"
@@ -104,6 +102,4 @@ $lod 40
 	replacebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm"
 	replacebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm"
 	nofacial
-}
-
-$popd
+	}

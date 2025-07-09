@@ -4,14 +4,16 @@
 
 $modelname "survivors/survivor_Biker_light.mdl"
 
+$pushd mdl
+
 $scale 1.05
 
-$model "Francis" "mdl/biker_reference_wrinkle.dmx" {
-	eyeball righteye "ValveBiped.Bip01_Head1" -1.25 -2.61 71.83  "Biker_Manager_eyeball_r" 1.05  4 "" 0.55
-	eyeball lefteye "ValveBiped.Bip01_Head1"   1.25 -2.60 71.83  "Biker_Manager_eyeball_l" 1.05 -4 "" 0.55
+$model		"Francis"		"biker_reference_wrinkle.dmx" {
+	eyeball		righteye	"ValveBiped.Bip01_Head1"	-1.25 -2.61 71.83	"Biker_Manager_eyeball_r" 1.05  4 "" 0.55
+	eyeball		lefteye		"ValveBiped.Bip01_Head1"	 1.25 -2.60 71.83	"Biker_Manager_eyeball_l" 1.05 -4 "" 0.55
 
-	dmxeyelid upper "mdl/biker_reference_wrinkle.dmx" lowerer F01 -0.20 neutral F00  0.05 raiser F02  0.31 righteyeball righteye lefteyeball lefteye
-	dmxeyelid lower "mdl/biker_reference_wrinkle.dmx" lowerer F03 -0.34 neutral F00 -0.20 raiser F04 -0.04 righteyeball righteye lefteyeball lefteye
+	dmxeyelid upper "biker_reference_wrinkle.dmx" lowerer F01 -0.20 neutral F00  0.05 raiser F02  0.31 righteyeball righteye lefteyeball lefteye
+	dmxeyelid lower "biker_reference_wrinkle.dmx" lowerer F03 -0.34 neutral F00 -0.20 raiser F04 -0.04 righteyeball righteye lefteyeball lefteye
 
 	$include qc/face.qci
 }
@@ -19,11 +21,7 @@ $model "Francis" "mdl/biker_reference_wrinkle.dmx" {
 $eyeposition 0 0 70
 $maxeyedeflection 30
 $forcephonemecrossfade
-
-$surfaceprop "flesh"
-$contents "solid"
-$ambientboost
-$mostlyopaque
+//$unlockdefinebones
 
 //-----------------------------------------------------------------------------------------------
 //                            			MATERIALS
@@ -31,6 +29,17 @@ $mostlyopaque
 
 $cdmaterials "models\survivors\biker\"
 $cdmaterials "models\survivors\"
+
+
+
+
+
+
+
+$surfaceprop "flesh"
+$contents "solid"
+$ambientboost
+$mostlyopaque
 
 //-----------------------------------------------------------------------------------------------
 //                            			ANIMATIONS
@@ -44,12 +53,9 @@ $ikchain "lfoot" "ValveBiped.Bip01_L_Foot" knee 0.707 -0.707 0
 $ikautoplaylock "rfoot" 1 0.1
 $ikautoplaylock "lfoot" 1 0.1
 
-$include "qc/anims_lightfrancis.qci"
+	$include		"qc/anims_francis_light.qci"
 
-//Only necessary when custom survivor's proportions are wildly different from vanilla skeleton. You might want to use $unlockdefinebones in tandem.
-//Frame 0 must be your custom survivor's proportions, Frame 1 must be the vanilla survivor's proportions. LOCATION KEYFRAMES ONLY! NO SCALE, NO ROTATION.
-
-//$sequence proportions mdl/anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
+//$sequence proportions anims/proportions.dmx autoplay loop realtime snap delta subtract proportions 1 numframes 1 noautoik hidden
 
 //-----------------------------------------------------------------------------------------------
 //                            			QC INCLUDES
@@ -57,8 +63,10 @@ $include "qc/anims_lightfrancis.qci"
 
 $proceduralbones "qc/procedurals.vrd"
 
-$include "qc/hbox.qci"
-$include "qc/attachments.qci"
-$include "qc/jiggle.qci"
-$include "qc/lod.qci"
-$include "qc/bone.qci"
+	$include		"qc/hbox.qci"
+	$include		"qc/attachments.qci"
+	$include		"qc/jiggle.qci"
+	$include		"qc/lod.qci"
+	$include		"qc/bone_francis.qci"
+
+$popd

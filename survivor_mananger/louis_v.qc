@@ -1,10 +1,9 @@
-$modelname weapons\arms\v_arms_louis.mdl
-//$modelname weapons\arms\v_arms_coach_new.mdl
+$modelname		weapons/arms/v_arms_louis.mdl
+//$modelname	weapons/arms/v_arms_coach_new.mdl
 
-$cdmaterials models\survivors\Manager\
+$cdmaterials "models/survivors/manager/"
 
-$include qc/bone_fps.qci
+$include	qc/bone_fps.qci
 
-$body arms "mdl/v_arms_louis.dmx"
-
-$sequence idle "mdl/v_arms_louis.dmx"
+$body		arms	"mdl/v_arms_louis.dmx"
+$sequence	idle	"mdl/v_arms_louis.dmx"
