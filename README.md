@@ -11,5 +11,18 @@ Some Tips
 75,000 | If your model exceeds this vertex count, your model may compile with errors, or perhaps fail to compile at all
 
 
-
 The most important bones to line up are the index finger and the thumb. The middle, ring, and pinky fingers can be slightly off and still align with gun animations fine.
+
+VGUI paths for Icons are like this; 
+
+l4d2 characters
+
+	vgui/s_panel_INTNAME
+	vgui/s_panel_INTNAME_incap
+	vgui/s_panel_lobby_INTNAME
+
+l4d1 characters
+
+	vgui/s_panel_INTNAME
+	vgui/s_panel_INTNAME_incap
+	vgui/select_GAMENAME
